@@ -14,12 +14,18 @@ function showfield(id){
     document.getElementById(id).classList.remove('hidden');
 }
 
+// Toggle effect
+
 document.getElementById('btn-history')
-.addEventListener('click', function () {
+.addEventListener('click', function (e) {
   showfield('history-section');
+  document.getElementById('btn-history').classList.add('bg-[#B4F461]')
+  document.getElementById('btn-donation').classList.remove('bg-[#B4F461]')
 })
 
 document.getElementById('btn-donation')
 .addEventListener('click', function () {
   showfield('donation-section');
+  document.getElementById('btn-donation').classList.add('bg-[#B4F461]')
+  document.getElementById('btn-history').classList.remove('bg-[#B4F461]')
 })
