@@ -10,6 +10,7 @@ document.getElementById('btn').addEventListener('click',function(e){
     document.getElementById('donation').innerText=amount+totdonateval;
     const newbalance=balance-amount;
     document.getElementById('personal-balance').innerText=newbalance;
+    
     // history upadate
     const name=document.getElementById('donate-name').innerText;
     const date=new Date();
@@ -19,5 +20,6 @@ document.getElementById('btn').addEventListener('click',function(e){
         <p>Date: ${date}</p>
     `
     document.getElementById('history').appendChild(div);
+    document.getElementById('donateval').value=' ';
 })
 
